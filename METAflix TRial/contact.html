@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MetaFlix — Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">MetaFlix</div>
+    <button id="hamburger" class="hamburger" aria-label="Toggle menu">☰</button>
+    <nav id="mainNav" class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="movies.html" class="nav-link">Movies</a>
+      <a href="shows.html" class="nav-link">Shows</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="btn" id="profileBtn">Sign In</button>
+    </div>
+  </header>
+
+  <main class="content contact">
+    <h1>Contact MetaFlix</h1>
+    <p>Questions? Reach us at <strong>teammetaflix@gmail.com</strong></p>
+
+    <form id="contactForm" class="contact-form" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="msg">Message</label>
+      <textarea id="msg" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn primary">Send Message</button>
+      <p id="formFeedback" class="form-feedback" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2025 MetaFlix</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

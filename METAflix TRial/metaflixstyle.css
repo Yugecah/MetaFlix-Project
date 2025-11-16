@@ -1,4 +1,5 @@
 body {
+background-color: black;
 margin: 0;
 font-family: Arial, sans-serif;
 color: white;
@@ -65,7 +66,7 @@ font-size: 16px;
     font-size: 24px;
     font-weight: bold;
     margin-top: 75px;
-    color: black;
+    color: white;
 }
 
 .hero {
@@ -107,4 +108,85 @@ font-size: 18px;
 cursor: pointer;
 }
 
+.img-toggle-wrapper {
+    position: relative;
+    width: 200px;      
+    height: 300px;     
+    display: inline-block;
+}
+
+.img-toggle-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity .3s ease;
+}
+
+.img1 {
+    opacity: 1;
+}
+
+.img2 {
+    opacity: 0;
+}
+
+.site-footer {
+    background-color: #141414;   /* Netflix dark background */
+    color: #ffffff;
+    padding: 40px 20px 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #bbbbbb;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #ffffff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    color: #888;
+}
 

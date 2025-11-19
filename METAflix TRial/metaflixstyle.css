@@ -187,6 +187,22 @@ cursor: pointer;
 .footer-section ul li {
     margin-bottom: 8px;
 }
+.category-section {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.category-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.category-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
 .footer-bottom {
     text-align: center;
@@ -196,4 +212,3 @@ cursor: pointer;
     font-size: 14px;
     color: #888;
 }
-

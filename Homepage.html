@@ -24,11 +24,11 @@
         <div class="right-area">
             <input type="text" placeholder="Search" class="search-box">
 
-            <!-- Login/Signup (Hidden when logged in) -->
+            
             <a href="login.html" id="loginBtnHeader" class="signin-btn">Login</a>
             <a href="signup.html" id="signupBtnHeader" class="signin-btn">Signup</a>
 
-            <!-- Profile Name + Logout (Shown when logged in) -->
+            
             <span id="userProfile" style="display:none; color:white; margin-right:15px; font-weight:bold;"></span>
             <button id="logoutBtn" style="display:none;" class="signin-btn">Logout</button>
         </div>
@@ -46,7 +46,7 @@
     </div>
 
 
-    <!-- ======== RECOMMENDED ======== -->
+  
     <section class="category-section">
         <h2 class="category-title">Recommended</h2>
         <div class="category-row with-arrows">
@@ -90,7 +90,7 @@
     </section>
 
 
-    <!-- ======== ANIME ======== -->
+    
     <section class="category-section">
         <h2 class="category-title">Anime</h2>
         <div class="category-row with-arrows">
@@ -133,7 +133,7 @@
     </section>
 
 
-    <!-- ======== SERIES ======== -->
+    
     <section class="category-section">
         <h2 class="category-title">Series</h2>
         <div class="category-row with-arrows">
@@ -176,7 +176,7 @@
     </section>
 
 
-    <!-- ======== MOVIES ======== -->
+   
     <section class="category-section">
         <h2 class="category-title">Movies</h2>
         <div class="category-row with-arrows">
@@ -209,7 +209,7 @@
                 </div>
 
                 <div class="img-toggle-wrapper">
-                    <img src="https://preview.redd.it/official-poster-for-james-gunns-superman" class="img1">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.YGw4-f7Y8HSn8wfSO8Fj1AHaJP?rs=1&pid=ImgDetMain&o=7&rm=3" class="img1">
                     <img src="https://th.bing.com/th/id/R.d79bb879bd1d793e2d1d2cf2110d9d9e" class="img2">
                 </div>
             </div>
@@ -253,7 +253,7 @@
 </footer>
 
 
-<!-- ================= USER PROFILE SCRIPT ================= -->
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const loggedIn = localStorage.getItem('metaflixLoggedIn');
@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const userProfile = document.getElementById("userProfile");
     const logoutBtn = document.getElementById("logoutBtn");
 
-    // If logged in → show username
+   
     if (loggedIn === "true" && currentUser) {
         loginBtn.style.display = "none";
         signupBtn.style.display = "none";
@@ -275,7 +275,7 @@ document.addEventListener("DOMContentLoaded", function () {
         userProfile.textContent = "Profile: " + currentUser;
     }
 
-    // Logout
+  
     logoutBtn.onclick = function () {
         localStorage.removeItem("metaflixLoggedIn");
         localStorage.removeItem("metaflixCurrentUser");
@@ -288,4 +288,5 @@ document.addEventListener("DOMContentLoaded", function () {
 <script src="feedback.js"></script>
 </body>
 </html>
+
 

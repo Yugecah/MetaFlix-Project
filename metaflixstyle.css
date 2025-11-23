@@ -341,3 +341,73 @@ body, html {
     font-size: 14px;
     color: #888;
 }
+
+/* Feedback widget button (floating) */
+.feedback-button {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 3000;
+  background: var(--accent, #e50914);
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+/* Feedback popup */
+.feedback-popup {
+  position: fixed;
+  right: 18px;
+  bottom: 72px;
+  width: 340px;
+  max-width: calc(100% - 40px);
+  background: var(--panel, #111);
+  color: var(--text, #fff);
+  border-radius: 10px;
+  z-index: 3001;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  padding: 12px;
+}
+
+.feedback-popup h3 { margin: 6px 0 8px; }
+.feedback-popup textarea {
+  width: 100%;
+  min-height: 90px;
+  resize: vertical;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.03);
+  color: inherit;
+}
+.feedback-popup input, .feedback-popup select {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.03);
+  color: inherit;
+}
+.feedback-popup .row { display:flex; gap:8px; }
+.feedback-popup .row > * { flex:1; }
+.feedback-popup .actions { display:flex; justify-content:space-between; gap:8px; margin-top:8px; }
+.feedback-popup .actions button { flex:1; padding:8px; border-radius:6px; border:none; cursor:pointer; }
+
+/* Feedback page list */
+.feedback-list { padding: 18px; }
+.feedback-card {
+  background: rgba(255,255,255,0.03);
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.feedback-card small { color: var(--muted, #bbb); display:block; margin-bottom:6px; }
+
+/* rating stars */
+.stars { display:inline-block; font-size:18px; color: #f5c518; }

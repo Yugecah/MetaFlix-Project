@@ -218,12 +218,11 @@ body, html {
     gap: 15px;
     padding: 10px 0;
     flex: 1;
-    /* Hide scrollbar but keep functionality */
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
 }
 .scroll-area::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none; 
 }
 .left-arrow:hover {
     border: none;
@@ -270,7 +269,7 @@ body, html {
 }
 
 .site-footer {
-    background-color: #141414;   /* Netflix dark background */
+    background-color: #141414;   
     color: #ffffff;
     padding: 40px 20px 20px;
     margin-top: 50px;
@@ -342,7 +341,6 @@ body, html {
     color: #888;
 }
 
-/* Feedback widget button (floating) */
 .feedback-button {
   position: fixed;
   right: 18px;
@@ -357,7 +355,6 @@ body, html {
   box-shadow: 0 8px 20px rgba(0,0,0,0.35);
 }
 
-/* Feedback popup */
 .feedback-popup {
   position: fixed;
   right: 18px;
@@ -399,7 +396,6 @@ body, html {
 .feedback-popup .actions { display:flex; justify-content:space-between; gap:8px; margin-top:8px; }
 .feedback-popup .actions button { flex:1; padding:8px; border-radius:6px; border:none; cursor:pointer; }
 
-/* Feedback page list */
 .feedback-list { padding: 18px; }
 .feedback-card {
   background: rgba(255,255,255,0.03);
@@ -409,7 +405,6 @@ body, html {
 }
 .feedback-card small { color: var(--muted, #bbb); display:block; margin-bottom:6px; }
 
-/* rating stars */
 .stars { display:inline-block; font-size:18px; color: #f5c518; }
 
 @media (max-width: 768px) {

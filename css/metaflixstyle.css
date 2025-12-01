@@ -558,3 +558,40 @@ body, html {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* --- MOBILE HAMBURGER MENU --- */
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.nav {
+    transition: max-height .3s ease;
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        overflow: hidden;
+        max-height: 0;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        background: rgba(0,0,0,0.9);
+        padding: 0 10px;
+    }
+
+    .nav.active {
+        max-height: 300px;
+        padding: 15px 10px;
+    }
+}

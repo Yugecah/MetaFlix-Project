@@ -18,9 +18,9 @@ TECHNOLOGIES USED
   
 CREDITS 
 Team Contributions 
-BAG-AO – index.html, metaflix.css, series.html, movies.html, recommended.html, mylibrary.html 
-CABANTO – .js 
-CABALLERO – script.js 
-GALLARDO – index.html, login.html, signup.html 
-PONIENTE – series.html, movies.html 
-VERZON – feedback.html, feedback.js
+- BAG-AO – index.html, metaflix.css, series.html, movies.html, recommended.html, mylibrary.html
+- CABANTO – .js
+- CABALLERO – script.js
+- GALLARDO – index.html, login.html, signup.html
+- PONIENTE – series.html, movies.html
+- VERZON – feedback.html, feedback.js

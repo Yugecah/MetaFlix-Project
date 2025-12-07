@@ -595,3 +595,48 @@ body, html {
         padding: 15px 10px;
     }
 }
+
+.scroll-area {
+
+    gap: 15px;
+    padding: 10px 0;
+    flex: 1;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+    width: 100%; 
+}
+
+.img-toggle-wrapper {
+    position: relative;
+    width: 250px;      
+    height: 350px;     
+    display: inline-block;
+    flex-shrink: 0; 
+}
+
+@media (max-width: 768px) {
+    .img-toggle-wrapper {
+        width: 140px; 
+        height: 210px;
+    }
+}
+
+@media (max-width: 600px) { 
+    
+    .img-toggle-wrapper {
+        width: 120px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-toggle-wrapper {
+        width: 140px;
+        height: 210px;
+    }
+    
+    .category-row {
+        justify-content: center;
+        gap: 12px;
+    }
+}

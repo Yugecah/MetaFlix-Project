@@ -596,6 +596,18 @@ body, html {
     }
 }
 
+.menu-btn {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+}
 .scroll-area {
 
     gap: 15px;

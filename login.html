@@ -4,16 +4,21 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Login - Metaflix</title>
-
   <link rel="stylesheet" href="metaflixstyle.css" />
 
   <style>
-    /* Background */
-    body {
-      background: url("https://wallpaperaccess.com/full/1981621.jpg") no-repeat center/cover;
-      margin: 0;
-      padding: 0;
+    /* Full-screen background layers for crossfade */
+    .bg-layer {
+      position: fixed;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: opacity 1s ease-in-out;
+      opacity: 0;
+      z-index: -2;
     }
+    .bg-layer.visible { opacity: 1; }
 
     .bg-overlay {
       position: fixed;
@@ -22,7 +27,6 @@
       z-index: -1;
     }
 
-    /* Center container */
     .center-wrap {
       min-height: 100vh;
       display: flex;
@@ -36,17 +40,16 @@
       background: rgba(10,10,10,0.65);
       border-radius: 10px;
       padding: 28px;
-      text-align: center;
       color: white;
-      backdrop-filter: blur(6px);
+      text-align: center;
       box-shadow: 0 8px 30px rgba(0,0,0,0.6);
-      animation: fadeIn .7s forwards;
+      backdrop-filter: blur(6px);
+      transform: translateY(20px);
       opacity: 0;
+      animation: slideIn .7s forwards;
     }
 
-    @keyframes fadeIn {
-      to { opacity: 1; }
-    }
+    @keyframes slideIn { to { transform: translateY(0); opacity: 1; } }
 
     .logo-title {
       font-size: 32px;
@@ -54,6 +57,7 @@
       color: cornflowerblue;
       font-weight: bold;
       margin-bottom: 10px;
+      user-select: none;
     }
 
     .login-card input {
@@ -70,23 +74,22 @@
       width: 100%;
       padding: 12px;
       margin-top: 12px;
-      border-radius: 6px;
-      border: none;
       background: cornflowerblue;
+      border: none;
+      border-radius: 6px;
       color: white;
       font-weight: bold;
       cursor: pointer;
     }
 
-    .login-card a {
-      color: cornflowerblue;
-      text-decoration: none;
-    }
+    .login-card a { color: cornflowerblue; text-decoration: none; }
   </style>
 </head>
 
 <body>
 
+<div id="bg1" class="bg-layer"></div>
+<div id="bg2" class="bg-layer"></div>
 <div class="bg-overlay"></div>
 
 <div class="center-wrap">
@@ -104,7 +107,7 @@
   </div>
 </div>
 
-<!-- External JS only -->
+<!-- ⭐ Move ALL JavaScript here -->
 <script src="js/login.js"></script>
 
 </body>

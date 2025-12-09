@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Login - Metaflix</title>
-  <link rel="stylesheet" href="css/metaflixstyle.css" />
+  <link rel="stylesheet" href="metaflixstyle.css" />
   <style>
     /* Full-screen background layers for crossfade */
     .bg-layer {
@@ -151,7 +151,7 @@ document.getElementById('loginBtn').onclick = function () {
   if (user === savedUser && pass === savedPass) {
     localStorage.setItem('metaflixLoggedIn', 'true');
     localStorage.setItem('metaflixCurrentUser', user);
-    window.location.href = 'Homepage.html';
+    window.location.href = 'index.html';
   } else {
     alert("Incorrect username or password.");
   }

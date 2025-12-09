@@ -1,18 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - MetaFlix</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - Metaflix</title>
 
-  <!-- Correct CSS path -->
-  <link rel="stylesheet" href="css/metaflixstyle.css">
+  <link rel="stylesheet" href="metaflixstyle.css" />
+
+  <style>
+    /* Background */
+    body {
+      background: url("https://wallpaperaccess.com/full/1981621.jpg") no-repeat center/cover;
+      margin: 0;
+      padding: 0;
+    }
+
+    .bg-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+      z-index: -1;
+    }
+
+    /* Center container */
+    .center-wrap {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .login-card {
+      width: 360px;
+      background: rgba(10,10,10,0.65);
+      border-radius: 10px;
+      padding: 28px;
+      text-align: center;
+      color: white;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+      animation: fadeIn .7s forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    .logo-title {
+      font-size: 32px;
+      font-style: italic;
+      color: cornflowerblue;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .login-card input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: none;
+      background: rgba(255,255,255,0.06);
+      color: white;
+    }
+
+    .login-card button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 12px;
+      border-radius: 6px;
+      border: none;
+      background: cornflowerblue;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .login-card a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body>
 
-<div id="bg1" class="bg-layer"></div>
-<div id="bg2" class="bg-layer"></div>
 <div class="bg-overlay"></div>
 
 <div class="center-wrap">
@@ -30,9 +104,8 @@
   </div>
 </div>
 
-<!-- Add missing JS -->
+<!-- External JS only -->
 <script src="js/login.js"></script>
-<script src="js/carousel.js"></script>
 
 </body>
 </html>

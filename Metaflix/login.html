@@ -151,7 +151,7 @@ document.getElementById('loginBtn').onclick = function () {
   if (user === savedUser && pass === savedPass) {
     localStorage.setItem('metaflixLoggedIn', 'true');
     localStorage.setItem('metaflixCurrentUser', user);
-    window.location.href = "index.html";
+    window.location.href = 'index.html';
   } else {
     alert("Incorrect username or password.");
   }

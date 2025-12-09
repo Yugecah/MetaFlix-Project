@@ -629,3 +629,16 @@ body, html {
         gap: 12px;
     }
 }
+
+.slider-wrapper {
+  height: 100vh; 
+  padding-top: 60px; 
+  position: relative; 
+}
+
+@media (max-width: 768px) {
+    .slider-wrapper {
+        padding-top: 35%; 
+        height:35%; 
+    }
+}

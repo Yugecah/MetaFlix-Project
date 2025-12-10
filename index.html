@@ -38,12 +38,15 @@
 
     <div class="slider-wrapper" id="slider-wrapper">
         <div class="swipe-containter" id="swipe-containter">
-            <div class="hero-content button">
-                <div class="buttons">
-                    <button class="btn-play">Play</button>
-                    <button class="btn-info">More Info</button>
-                </div>
-            </div>
+            <div class="hero-content button"></div>
+        </div>
+    </div>
+
+    <div id="video-modal" class="video-modal">
+        <div class="video-backdrop"></div>
+        <div class="video-container">
+            <button id="video-close" class="video-close">&#10005;</button>
+            <video id="slide-video" controls></video>
         </div>
     </div>
 
@@ -52,9 +55,7 @@
     <section class="category-section">
         <h2 class="category-title">Recommended</h2>
         <div class="category-row with-arrows">
-
-            <button class="arrow left">&#10094;</button>
-
+            <button class="cat-arrow left">&#10094;</button>
             <div class="scroll-area">
                 <div class="img-toggle-wrapper">
                     <img src="https://i.ebayimg.com/images/g/jsYAAeSw8nppF7W6/s-l960.png" class="img1">
@@ -86,8 +87,7 @@
                     <img src="https://images-cdn.9gag.com/photo/aQXO6Pe_700b.jpg" class="img2">
                 </div>
             </div>
-
-            <button class="arrow right">&#10095;</button>
+            <button class="cat-arrow right">&#10095;</button>
         </div>
     </section>
 
@@ -96,8 +96,7 @@
     <section class="category-section">
         <h2 class="category-title">Anime</h2>
         <div class="category-row with-arrows">
-            <button class="arrow left">&#10094;</button>
-
+            <button class="cat-arrow left">&#10094;</button>
             <div class="scroll-area">
                 <div class="img-toggle-wrapper">
                     <img src="https://images-cdn.ubuy.co.in/633ff1157e3fbc25557517c8-one-piece-poster-japanese-anime-posters.jpg" class="img1">
@@ -129,8 +128,7 @@
                     <img src="https://www.suggestingmovie.com/Movies/7667-lci.jpg" class="img2">
                 </div>
             </div>
-
-            <button class="arrow right">&#10095;</button>
+            <button class="cat-arrow right">&#10095;</button>
         </div>
     </section>
 
@@ -139,8 +137,7 @@
     <section class="category-section">
         <h2 class="category-title">Series</h2>
         <div class="category-row with-arrows">
-            <button class="arrow left">&#10094;</button>
-
+            <button class="cat-arrow left">&#10094;</button>
             <div class="scroll-area">
                 <div class="img-toggle-wrapper">
                     <img src="https://cdn.kinocheck.com/i/25rb57gaqu.jpg" class="img1">
@@ -172,8 +169,7 @@
                     <img src="https://artworks.thetvdb.com/banners/posters/76568-24.jpg" class="img2">
                 </div>
             </div>
-
-            <button class="arrow right">&#10095;</button>
+            <button class="cat-arrow right">&#10095;</button>
         </div>
     </section>
 
@@ -182,8 +178,7 @@
     <section class="category-section">
         <h2 class="category-title">Movies</h2>
         <div class="category-row with-arrows">
-            <button class="arrow left">&#10094;</button>
-
+            <button class="cat-arrow left">&#10094;</button>
             <div class="scroll-area">
                 <div class="img-toggle-wrapper">
                     <img src="https://thegeekwave.com/wp-content/uploads/2023/07/Deadpoets.jpg" class="img1">
@@ -220,8 +215,7 @@
                     <img src="https://image.tmdb.org/t/p/original/d9kDYFoQzcmhWtmncJhKsFq8KoH.jpg" class="img2">
                 </div>
             </div>
-
-            <button class="arrow right">&#10095;</button>
+            <button class="cat-arrow right">&#10095;</button>
         </div>
     </section>
 
@@ -291,9 +285,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
-<script src="script.js"></script>
-<script src="feedback.js"></script>
-<script src="menu.js"></script>
+<script src="js/script.js"></script>
+<script src="js/feedback.js"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>
 

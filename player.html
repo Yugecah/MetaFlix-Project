@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metaflix Player</title>
+    <link rel="stylesheet" href="css/metaflixstyle.css" />
+</head>
+<body>
+    <div class="header">
+        <div id="menu-toggle" class="menu-btn">&#9776;</div>
+        <div class="left-area">
+            <div class="logo">Metaflix</div>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="Series.html">Series</a>
+                <a href="Movies.html">Movies</a>
+                <a href="Recommended.html">Recommended</a>
+                <a href="MyLibrary.html">MyLibrary</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+        </div>
+        <div class="right-area">
+            <input type="text" placeholder="Search" class="search-box">
+            <a href="login.html" id="loginBtnHeader" class="signin-btn">Login</a>
+            <a href="signup.html" id="signupBtnHeader" class="signin-btn">Signup</a>
+            <span id="userProfile" style="display:none; color:white; margin-right:15px; font-weight:bold;"></span>
+            <button id="logoutBtn" style="display:none;" class="signin-btn">Logout</button>
+        </div>
+    </div>
+
+    <main style="margin-top:80px; padding: 20px;">
+        <div class="video-container" style="margin:auto; max-width:1000px;">
+            <video id="player-video" controls style="width:100%; height:auto;"></video>
+        </div>
+        <h2 id="player-title" class="player-title"></h2>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Metaflix</h3>
+                <p>Metaflix is your source for series, movies, and anime.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: support@metaflix.com</p>
+                <p>Phone: +63 912 345 6789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>
+                    <a href="#">Facebook</a><br>
+                    <a href="#">Instagram</a><br>
+                    <a href="#">Twitter</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2025 Metaflix. All rights reserved.</div>
+    </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const loggedIn = localStorage.getItem('metaflixLoggedIn');
+        const currentUser = localStorage.getItem('metaflixCurrentUser');
+        const loginBtn = document.getElementById("loginBtnHeader");
+        const signupBtn = document.getElementById("signupBtnHeader");
+        const userProfile = document.getElementById("userProfile");
+        const logoutBtn = document.getElementById("logoutBtn");
+        if (loggedIn === "true" && currentUser) {
+            loginBtn.style.display = "none";
+            signupBtn.style.display = "none";
+            userProfile.style.display = "inline-block";
+            logoutBtn.style.display = "inline-block";
+            userProfile.textContent = "Profile: " + currentUser;
+        }
+        logoutBtn.onclick = function () {
+            localStorage.removeItem("metaflixLoggedIn");
+            localStorage.removeItem("metaflixCurrentUser");
+            window.location.reload();
+        };
+    });
+    </script>
+    <script src="js/player.js"></script>
+    <script src="js/feedback.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
